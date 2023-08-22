@@ -1,0 +1,22 @@
+<div class="post">
+    <div class="display" *ngIf="posts$  | async as post ">
+        <div class="infor" *ngFor="let posts of post ">
+            <div id="image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaV77GPxFMMY0MFUAv-lywg5rQQIB-R6QxQ&usqp=CAU"
+                    alt="">
+            </div>
+            <div>
+                <p>{{posts.userDetails.name?posts.userDetails.name:"Ademola"}}</p>
+                <p>{{posts.body}}</p>
+                <div class="icons">
+                    <img src="" alt="likes">
+                    <img src="" alt="comment">
+                    <img src="" alt="heart image">
+                </div>
+            </div>
+            <div class="commentsbody">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

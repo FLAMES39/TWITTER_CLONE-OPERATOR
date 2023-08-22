@@ -1,0 +1,21 @@
+<div class="page">
+    <div class="profile_top" >
+        <div class="userimage">
+            <img src="../../assets/header.jpg" alt="" >
+        </div>
+        <div class="profileimage_details" *ngIf="UserDetails$ | async as user" >
+            <div class="prof_img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaV77GPxFMMY0MFUAv-lywg5rQQIB-R6QxQ&usqp=CAU" alt="">
+            </div>
+           <div class="details" >
+           <h1>{{user.name}}</h1>
+            <p>{{user.username}}</p>
+            <p>{{user.address.city}}</p>
+            <p>{{user.company.name}}</p>
+           </div>
+
+           
+        </div>
+
+    </div>
+</div>

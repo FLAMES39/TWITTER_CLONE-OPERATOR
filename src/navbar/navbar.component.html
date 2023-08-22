@@ -1,0 +1,11 @@
+<div class="header">
+    <div class="title">
+        <h1>TWITTER</h1>
+    </div>
+    <div class="members">
+        <select (change)="onChange($event)">
+            <option *ngFor="let user of users$ | async"value={{user.id}}>{{user.name}}</option>
+        </select>
+    </div>
+    
+</div>

@@ -1,0 +1,18 @@
+.post{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+    max-width: 50%;
+}
+.infor{
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+.comments{
+    display: flex;
+}
