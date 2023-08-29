@@ -2,6 +2,7 @@
     display: grid;
     justify-content: space-between;
     /* max-width: 70%; */
+    gap: 4rem;
 }
 .commentsbody{
     display: grid;
@@ -9,9 +10,17 @@
 }
 .comments{
     display: flex;
-    height: 10rem;
+    height: 6rem;
+    align-items: center;
+   
+   
     
 }
 h1{
     text-align: center;
+}
+img{
+    width: 15rem;
+    height: 5rem;
+
 }

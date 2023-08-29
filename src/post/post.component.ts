@@ -17,11 +17,11 @@ export class PostComponent implements OnInit {
 
   ngOnInit(): void {
     this.posts$.subscribe(Posts=>{
-      this.postservice.setPostId(Posts[0].id)
+     this.postservice.setPostId(Posts[0].id)
     }) 
   }
 
-  onPostClick(event:Event){
-// this.postservice.setSelectedPostComments()
+  onPostClick(id:number){
+    this.postservice.setPostId(id)
   }
 }

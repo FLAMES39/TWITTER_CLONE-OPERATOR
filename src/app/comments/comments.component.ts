@@ -12,14 +12,11 @@ import { comments } from 'src/Interfaces';
   templateUrl: './comments.component.html',
   styleUrls: ['./comments.component.css']
 })
-export class CommentsComponent implements OnInit {
+export class CommentsComponent  {
   constructor(private postservice:PostService){}
 
 
     comments$= this.postservice.postscomment$
-  ngOnInit(): void {
-    // let id = event?.target as htmlse
-    // this.postservice.setPostId(id)
-  }
+    postid=this.postservice.selectedPost$ //can use this to bind and get the postid
 
 }

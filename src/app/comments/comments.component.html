@@ -1,16 +1,18 @@
 <div class="views" *ngIf="comments$ | async as comments">
-    <h1>COMMENTS</h1>
-    <div class="container"  >
-        <div class="comments" *ngFor="let comment of comments  " >
+    <p>Post Comments of post {{comments[0].id}}</p>
+    <div class="container">
+
+        <div class="comments" *ngFor="let comment of comments  ">
 
             <div>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaV77GPxFMMY0MFUAv-lywg5rQQIB-R6QxQ&usqp=CAU"
                     alt="">
             </div>
-            <div class="commentsbody" >
-                <p>{{comment.name}}</p>
-                <p>{{comment.body}}</p>
-
+            <div class="commentsbody">
+                <div class="background">
+                    <p>{{comment.name}}</p>
+                    <p>{{comment.body}}</p>
+                </div>
                 <div class="icons">
                     <img src="" alt="likes">
                     <img src="" alt="comment">

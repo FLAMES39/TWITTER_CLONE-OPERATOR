@@ -1,7 +1,7 @@
 <div class="post">
     <div >
-        <div class="display" *ngIf="posts$  | async as post " (click)="onPostClick($event)" >
-            <div class="infor" *ngFor="let posts of post " >
+        <div class="display" *ngIf="posts$  | async as post ">
+            <div class="infor" *ngFor="let posts of post "  (click)="onPostClick(posts.id)"  >
                 <div id="image">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaV77GPxFMMY0MFUAv-lywg5rQQIB-R6QxQ&usqp=CAU"
                         alt="">
