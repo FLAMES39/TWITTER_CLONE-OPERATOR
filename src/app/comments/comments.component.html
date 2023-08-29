@@ -1,10 +1,22 @@
-<p>coments works</p>
-<div class="container">
-    <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaV77GPxFMMY0MFUAv-lywg5rQQIB-R6QxQ&usqp=CAU"  alt="">
-    </div>
-    <div  class="commentsbody">
-        <p>Name</p>
-        <p>body</p>
+<div class="views" *ngIf="comments$ | async as comments">
+    <h1>COMMENTS</h1>
+    <div class="container"  >
+        <div class="comments" *ngFor="let comment of comments  " >
+
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaV77GPxFMMY0MFUAv-lywg5rQQIB-R6QxQ&usqp=CAU"
+                    alt="">
+            </div>
+            <div class="commentsbody" >
+                <p>{{comment.name}}</p>
+                <p>{{comment.body}}</p>
+
+                <div class="icons">
+                    <img src="" alt="likes">
+                    <img src="" alt="comment">
+                    <img src="" alt="heart image">
+                </div>
+            </div>
+        </div>
     </div>
 </div>

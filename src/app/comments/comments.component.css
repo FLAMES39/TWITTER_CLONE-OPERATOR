@@ -1,8 +1,17 @@
 .container{
-    display: flex;
+    display: grid;
     justify-content: space-between;
+    /* max-width: 70%; */
 }
 .commentsbody{
     display: grid;
-    align-items: flex-end;
+
+}
+.comments{
+    display: flex;
+    height: 10rem;
+    
+}
+h1{
+    text-align: center;
 }

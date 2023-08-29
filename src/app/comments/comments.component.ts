@@ -1,6 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { PostService } from 'src/Services/post.service';
+import { Observable } from 'rxjs';
+import { comments } from 'src/Interfaces';
 
 @Component({
   selector: 'app-comments',
@@ -9,6 +12,14 @@ import { RouterModule } from '@angular/router';
   templateUrl: './comments.component.html',
   styleUrls: ['./comments.component.css']
 })
-export class CommentsComponent {
+export class CommentsComponent implements OnInit {
+  constructor(private postservice:PostService){}
+
+
+    comments$= this.postservice.postscomment$
+  ngOnInit(): void {
+    // let id = event?.target as htmlse
+    // this.postservice.setPostId(id)
+  }
 
 }

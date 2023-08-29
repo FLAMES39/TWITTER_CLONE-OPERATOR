@@ -1,18 +1,29 @@
 .post{
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
     justify-content: space-between;
     padding: 5px;
     margin: 5px;
-    max-width: 50%;
+
+}
+.display{
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+    width: 70%;
+    border: 2px ;
 }
 .infor{
     display: flex;
     justify-content: space-between;
 }
+
 .icons{
     display: flex;
     justify-content: space-between;
 }
-.comments{
+.commentsbody{
     display: flex;
+    /* max-width: 60%; */
+
 }

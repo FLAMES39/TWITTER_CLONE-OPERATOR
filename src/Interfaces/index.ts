@@ -43,9 +43,17 @@ export interface post{
 
 
 export interface comments{
+    postId:number
+    id:number
+    name:string
+    email:string
+    body:string
+}
+export interface postcomments{
     postid:number
     id:number
     name:string
     email:string
     body:string
+    postDetails:post
 }

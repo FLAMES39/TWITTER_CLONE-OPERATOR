@@ -8,6 +8,8 @@ import { UserProfileComponent } from 'src/user-profile/user-profile.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { PostComponent } from 'src/post/post.component';
+import { CommentsComponent } from './comments/comments.component';
+
 
 @NgModule({
     declarations: [
@@ -22,8 +24,10 @@ import { PostComponent } from 'src/post/post.component';
         AppRoutingModule,
         RouterModule,
         NavbarComponent,
-        UserProfileComponent, 
-        PostComponent     
+        UserProfileComponent,
+        PostComponent
+          
+        
     ]
 })
 export class AppModule { }
